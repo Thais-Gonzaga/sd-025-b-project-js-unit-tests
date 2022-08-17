@@ -30,7 +30,7 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
     expect(typeof resp).toBe('object'); // se for do tipo object, true
     expect(resp).not.toBeNull(); // se for nulo, false
     expect(Array.isArray(resp)).toBeFalsy(); // se for um array, retornar false
-    expect(resp instanceof Function).toBeFalsy(); // se resp for uma função, retorne false 
+    expect(resp instanceof Function).toBeFalsy(); //
     // Teste se o objeto retornado possui 3 propriedades.
     expect(Object.keys(circle(2)).length).toBe(3);
     // Teste se a função, quando não recebe nenhum parâmetro, retorna undefined.
