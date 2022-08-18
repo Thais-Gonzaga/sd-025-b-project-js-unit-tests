@@ -46,7 +46,10 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
      expect(Array.isArray(func[0])).toBeFalsy();
      expect(Array.isArray(func[1])).toBeFalsy();
      // Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
+     expect(func[0]).not.toEqual(func[1])
      // Teste se os dois productIds terminam com 123.
+     expect(func[0].details.productId.endsWith('123')).toBeTruthy();
+     expect(func[1].details.productId.endsWith('123')).toBeTruthy();
 
   });
 });
